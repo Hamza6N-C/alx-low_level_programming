@@ -5,7 +5,7 @@
  * main - Entry
  * Return: ALways 0
  */
-int main (void)
+int main(void)
 {
 	int m;
 	int k;
@@ -20,10 +20,11 @@ int main (void)
 	}
 	else if (k == 0)
 	{
-		printf("Last digit of %d is %d and is 0\n", m, m);
+	printf("Last digit of %d is %d and is 0\n", m, m);
 	}
-		else 
-		{
+	else
+	{
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", m, k);
-		}
-		return (0);	
+	}
+	return (0);
+}
