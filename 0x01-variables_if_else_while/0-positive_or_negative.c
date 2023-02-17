@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <sdtlib.h>
 #include <time.h>
-
 /**
  * main - prints if the number is pos,neg or 0
  * Return: ALways 0
