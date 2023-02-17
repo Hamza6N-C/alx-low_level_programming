@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <sdtlib.h>
+#include <stdlib.h>
 #include <time.h>
 /**
  * main - prints if the number is pos,neg or 0
