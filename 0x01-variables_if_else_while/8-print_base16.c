@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - prints if the number is pos,neg or 0
+ * main - prints all the numbers of base 16 in lowercase, followed by a new line
  * Return: ALways 0
  */
 int main(void)
