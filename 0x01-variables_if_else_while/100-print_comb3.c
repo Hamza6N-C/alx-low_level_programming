@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = '0'; i <= '8'; i++)
 	{
-	for (j = d + 1; j <= '9'; j++)
+	for (j = i + 1; j <= '9'; j++)
 	{
 	if (i != j)
 	{
