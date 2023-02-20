@@ -3,12 +3,19 @@
  * main - Entry
  * Return: Always 0
  */
+
 int main(void)
 {
-	printf("Size of a char: %a byte(s)\n", sizeof(char));
-	printf("Size of a int: %a byte(s)\n", sizeof(int));
-	printf("Size of long int: %a bytes(s)\n", sizeof(long int));
-	printf("Size of a long long int: %a bytes(s)\n", sizeof(long long int));
-	printf("size of a float: %a bytes(s)\n", sizeof(float));
+	int a;
+	long int b;
+	long long int c;
+	char d;
+	float e;
+
+	printf("Size of a char: %i byte(s)\n", (unsigned long)sizeof(d));
+	printf("Size of an int: %i byte(s)\n", (unsigned long)sizeof(a));
+	printf("Size of a long int: %i byte(s)\n", (unsigned long)sizeof(b));
+	printf("Size of a long long int: %i byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of a float: %i byte(s)\n", (unsigned long)sizeof(e));
 	return (0);
 }
