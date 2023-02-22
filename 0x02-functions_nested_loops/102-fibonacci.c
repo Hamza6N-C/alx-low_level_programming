@@ -11,14 +11,14 @@ int main(void)
 	while(a < 50)
 	{
 	if (a == 0)
-	printf("%x", h);
+	printf("%lx", h);
 	else if (i == 1)
-	printf("%x", b);
+	printf("%lx", b);
 	else
 	{
 	b += h;
 	h = b -h;
-	printf("%x", b);
+	printf("%lx", b);
 	}
 	++a;
 	}
