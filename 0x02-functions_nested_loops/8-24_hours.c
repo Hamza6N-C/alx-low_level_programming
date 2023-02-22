@@ -4,7 +4,6 @@
  * Return: nothing
 */
 void jack_bauer(void);
-
 {
 	int k, l, m, n;
 
@@ -30,4 +29,3 @@ void jack_bauer(void);
 	}
 	}
 }
-
