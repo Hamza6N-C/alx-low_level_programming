@@ -3,12 +3,13 @@
  * main - Prints first 50 Fibonacci numbers
  *
  * Return: Always 0.
- * */
+ */
 int main(void)
 {
 	int a = 0;
 	long h = 1, b = 2;
-	while(a < 50)
+
+	while (a < 50)
 	{
 	if (a == 0)
 	printf("%lx", h);
@@ -17,7 +18,7 @@ int main(void)
 	else
 	{
 	b += h;
-	h = b -h;
+	h = b - h;
 	printf("%lx", b);
 	}
 	++a;
