@@ -12,7 +12,7 @@ int main(void)
 	{
 	if (a == 0)
 	printf("%lx", h);
-	else if (i == 1)
+	else if (a == 1)
 	printf("%lx", b);
 	else
 	{
