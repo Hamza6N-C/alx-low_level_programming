@@ -2,7 +2,7 @@
 /**
  * main - Prints first 50 Fibonacci numbers
  *
- * Return: Always 0.
+ * Return: nothing
  */
 int main(void)
 {
@@ -14,12 +14,12 @@ int main(void)
 	if (a == 0)
 	printf("%lx", h);
 	else if (a == 1)
-	printf("%lx", b);
+	printf(", %lx", b);
 	else
 	{
 	b += h;
 	h = b - h;
-	printf("%lx", b);
+	printf(", %lx", b);
 	}
 	++a;
 	}
