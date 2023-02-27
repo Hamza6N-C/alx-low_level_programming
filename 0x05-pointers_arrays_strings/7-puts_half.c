@@ -11,10 +11,8 @@ void puts_half(char *str)
 	int i, n, l;
 
 	l = 0;
-	i = 0;
-	while (str[i] != '\0')
+	for (i =0; str[i] != '\0'; i++)
 	l++;
-	i++;
 	n = (l / 2);
 	if ((l % 2) == 1)
 	n = ((l - 1) / 2);
