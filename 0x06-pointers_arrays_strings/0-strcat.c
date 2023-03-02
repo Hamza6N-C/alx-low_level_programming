@@ -3,11 +3,10 @@
  * _strcat - concatenates two strings
  * @dest: input value 
  * @src: input value
- * @k: input value
  *
  * Return: void
  */
-char *_strcat(char *dest, char *src, int k)
+char *_strcat(char *dest, char *src,)
 {
 	int a;
 	int b;
@@ -18,7 +17,7 @@ char *_strcat(char *dest, char *src, int k)
 		a++;
 	}
 	b = 0;
-	while ( b < k && src[b] != '\0')
+	while (src[b] != '\0')
 	{
 		dest[a] = src[b];
 		a++;
