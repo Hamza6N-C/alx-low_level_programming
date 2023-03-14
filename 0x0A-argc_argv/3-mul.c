@@ -6,42 +6,40 @@
  *
  * Return: the int converted from the string
  */
+
 int _atoi(char *s)
 {
-	int i, j, n, l, k, d;
+	int i, a, n, l, f, d;
 
 	i = 0;
-	j = 0;
+	a = 0;
 	n = 0;
 	l = 0;
-	k = 0;
+	f = 0;
 	d = 0;
 	while (s[l] != '\0')
 	l++;
-	while (i < l && k == 0)
+	while (i < l && f == 0)
 	{
 	if (s[i] == '-')
-	++j;
+	++a;
 	if (s[i] >= '0' && s[i] <= '9')
 	{
 	d = s[i] - '0';
-	if (j % 2)
+	if (a % 2)
 	d = -d;
 	n = n * 10 + d;
-	k = 1;
+	f = 1;
 	if (s[i + 1] < '0' || s[i + 1] > '9')
 	break;
-	k = 0;
+	f = 0;
 	}
 	i++;
 	}
-	if (k == 0)
+	if (f == 0)
 	return (0);
 	return (n);
-}}
-
-
-
+}
 /**
  * main - multiplies two numbers
  * @argc: number of arguments
@@ -49,6 +47,7 @@ int _atoi(char *s)
  *
  * Return: 0 (Success), 1 (Error)
  */
+
 int main(int argc, char *argv[])
 {
 	int res, a, b;
