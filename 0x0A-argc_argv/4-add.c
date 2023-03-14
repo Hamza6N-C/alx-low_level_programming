@@ -42,12 +42,12 @@ int main(int argc, char *argv[])
 	int str_to_int;
 	int s = 0;
 
-	count = 1;
+	c = 1;
 	while (c < argc) /*check the whole array*/
 	{
-	if (check_num(argv[count]))
+	if (check_num(argv[c]))
 	{
-	str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
+	str_to_int = atoi(argv[c]); /*ATOI --> convert string to int*/
 	s += str_to_int;
 	}
 	/*Condition if one of the number contains symbols that are not digits*/
@@ -56,8 +56,8 @@ int main(int argc, char *argv[])
 	printf("Error\n");
 	return (1);
 	}
-	count++;
+	c++;
 	}
-	printf("%d\n", sum);
+	printf("%d\n", s);
 	return (0);
 }
