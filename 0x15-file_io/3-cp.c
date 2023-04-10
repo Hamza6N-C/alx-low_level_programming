@@ -16,7 +16,7 @@ char *create_buffer(char *f)
 char *buf;
 
 buf = malloc(sizeof(char) * 1024);
-if (buff == NULL)
+if (buf == NULL)
 {
 dprintf(STDERR_FILENO,
 "Error: Can't write to %s\n", f);
