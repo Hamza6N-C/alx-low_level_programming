@@ -60,7 +60,7 @@ char *buf;
 
 if (argc != 3)
 {
-dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+dprintf(STDERR_FILENO, "Usage: cp f_from f_to\n");
 exit(97);
 }
 buf = create_buffer(argv[2]);
@@ -71,7 +71,7 @@ do {
 if (from == -1 || r == -1)
 {
 dprintf(STDERR_FILENO,
-"Error: Can't read from file %s\n", argv[1]);
+"Error: Can't read from f %s\n", argv[1]);
 free(buf);
 exit(98);
 }
@@ -87,7 +87,7 @@ r = read(from, buf, 1024);
 to = open(argv[2], O_WRONLY | O_APPEND);
 } while (r > 0);
 free(buf);
-close_file(from);
-close_file(to);
+close_f(from);
+close_f(to);
 return (0);
 }
